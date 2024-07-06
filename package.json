@@ -1,0 +1,6 @@
+"scripts": {
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "electron-dev": "concurrently \"npm start\" \"wait-on http://localhost:3000 && electron .\"",
+  "electron-pack": "electron-packager . TaskMaster --platform=win32 --arch=x64 --out=dist --overwrite"
+}

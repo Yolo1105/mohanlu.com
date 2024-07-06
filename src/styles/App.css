@@ -1,0 +1,19 @@
+.app {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-size: cover;
+  }
+  
+  .main-content {
+    display: flex;
+  }
+  
+  .left-panel {
+    width: 200px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .right-panel {
+    flex: 1;
+    padding: 20px;
+  }
