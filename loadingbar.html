@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Bar</title>
+    <link rel="stylesheet" href="loadingbar.css">
+    <script>
+        // Function to handle the timed sequence and animation control
+        function controlAnimation() {
+            const loadingBar = document.querySelector('.loading.bar');
+            
+            // First 2 seconds at normal speed
+            setTimeout(() => {
+                loadingBar.style.animationPlayState = 'running'; // Normal speed
+            }, 0);
+
+            // At 5th second, start dimming and slow down
+            setTimeout(() => {
+                document.body.style.transition = 'opacity 2s ease-out'; // Slowing down the dimming
+                document.body.style.opacity = '0'; // Dimming out
+                // After 2 seconds (to allow dimming), transition to index.html
+                setTimeout(() => {
+                    window.location.href = "index.html";
+                }, 2000); // Delay to load index.html after dimming
+            }, 2000); // 4 seconds before starting the dimming
+        }
+
+        // Call the function when the window is loaded
+        window.onload = controlAnimation;
+    </script>
+</head>
+<body>
+    <div class="loading bar">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

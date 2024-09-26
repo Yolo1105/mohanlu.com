@@ -1,0 +1,278 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Canvas Background */
+#particle-canvas {
+    width: 100%;
+    height: 100%;
+    background-image: url('robot.png');
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+    z-index: 1001;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    color: #40a9ff;
+    font-size: 34px;
+    font-weight: bold;
+    margin-left: 80px;
+}
+
+.logo .dot,
+.logo .underscore {
+    color: #40a9ff;
+}
+
+.nav-items {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex: 1;
+}
+
+.nav-items li {
+    list-style: none;
+    position: relative;
+    text-align: center;
+}
+
+.nav-items li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+    position: relative;
+    transition: opacity 0.3s ease;
+    display: block;
+    padding-right: 20px;
+    top: 5px;
+}
+
+.nav-items li a::before {
+    content: "// ";
+    color: #ffffff;
+    font-weight: bold;
+    position: absolute;
+    left: -20px;
+}
+
+.nav-items li a::after {
+    content: attr(data-number);
+    color: #cccccc;
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    transform: translateX(-50%);
+    font-size: 12px;
+}
+
+.nav-items li a:hover ~ li a {
+    opacity: 0.3;
+}
+
+.nav-items li a:hover ~ li a::before,
+.nav-items li a:hover ~ li a::after {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.nav-items li a:not(:hover) {
+    opacity: 1;
+}
+
+/* Center Content */
+.center-content {
+    z-index: 1;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.small-text {
+    font-size: 1.3em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+#typewriter {
+    font-size: 4em;
+    color: white;
+    font-weight: bold;
+}
+
+#typewriter span.blue {
+    color: #40a9ff;
+}
+
+#typewriter .Typewriter__cursor {
+    color: #40a9ff;
+}
+
+/* Button Styles */
+.button-container {
+    margin-top: 18px;
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    position: relative; 
+    z-index: 1002; 
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.btn-light:hover {
+    opacity: 0.8;
+}
+
+.btn-dark {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.btn-dark:hover {
+    opacity: 0.8;
+}
+
+.container {
+    position: absolute;
+    top: 120px; /* Adjust this value if necessary */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    padding: 20px;
+    z-index: 10;
+    color: #ffffff; /* Set text color to white */
+}
+
+.container h1, .container h2 {
+    color: #ffffff; /* Set h1 and h2 text to white */
+}
+
+.container span {
+    color: #40a9ff
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 48px;
+    color: #333;
+}
+
+h1 span {
+    color: #5af78e;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 32px;
+    color: #333;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 24px;
+    color: #333;
+    margin-top: 50px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #5af78e;
+}
+
+.tech-icons {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.tech-icons img {
+    margin-right: 10px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    float: right;
+    margin-left: 20px;
+}
+
+a {
+    color: #40a9ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-items {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .nav-items li a {
+        font-size: 16px;
+    }
+    .btn {
+        font-size: 14px;
+    }
+}
