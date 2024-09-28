@@ -1,0 +1,20 @@
+/* media-queries.css */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-items li a {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
