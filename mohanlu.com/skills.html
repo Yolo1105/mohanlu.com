@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Link to the separated CSS file for Skills -->
+    <link rel="stylesheet" href="styles/skills.css">
+
+    <!-- Link to separated CSS files -->
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/background.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/media-queries.css">
+</head>
+<body>
+    <!-- Particle Canvas Background -->
+    <div id="particle-canvas"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo" onclick="location.href='index.html'" style="cursor: pointer;">
+            MohanLu<span class="dot">.</span><span class="underscore">_</span>
+        </div>
+        <ul class="nav-items">
+            <li><a href="#About" onclick="location.href='about.html'" data-number="01">About</a></li>
+            <li><a href="#Experience" onclick="location.href='experience.html'" data-number="02">Experience</a></li>
+            <li><a href="#Projects" onclick="location.href='projects.html'" data-number="03">Projects</a></li>
+            <li><a href="#Skills" onclick="location.href='skills.html'" data-number="04">Skills</a></li>
+            <li><a href="#Contact" onclick="location.href='contact.html'" data-number="05">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Programming Languages Section -->
+        <h2 class="title">Programming Languages</h2>
+        <div class="skills-grid">
+            <div class="skill-box">
+                <a href="https://www.python.org/" target="_blank">
+                    <span>Python</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://www.java.com/" target="_blank">
+                    <span>Java</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://isocpp.org/" target="_blank">
+                    <span>C++</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++ Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank">
+                    <span>C#</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" alt="C# Logo">
+                </a>
+            </div>
+            <!-- Additional programming languages -->
+        </div>
+
+        <!-- Web Development Section -->
+        <h2 class="title">Web Development</h2>
+        <div class="skills-grid">
+            <div class="skill-box">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+                    <span>JavaScript</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+                    <span>HTML</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+                    <span>CSS</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://reactjs.org/" target="_blank">
+                    <span>React.js</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo">
+                </a>
+            </div>
+            <!-- Additional web development tools -->
+        </div>
+
+        <!-- Embedded Systems Section -->
+        <h2 class="title">Embedded Systems</h2>
+        <div class="skills-grid">
+            <div class="skill-box">
+                <a href="https://www.arduino.cc/" target="_blank">
+                    <span>Arduino IDE</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg" alt="Arduino Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://www.raspberrypi.org/" target="_blank">
+                    <span>Raspberry Pi</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/c/cb/Raspberry_Pi_Logo.svg" alt="Raspberry Pi Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://www.ros.org/" target="_blank">
+                    <span>Robot Operating System (ROS)</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Ros_logo.svg" alt="ROS Logo">
+                </a>
+            </div>
+        </div>
+
+        <!-- High Performance Computing (HPC) and Cloud Computing Section -->
+        <h2 class="title">HPC and Cloud Computing</h2>
+        <div class="skills-grid">
+            <div class="skill-box">
+                <a href="https://hpc.nih.gov/" target="_blank">
+                    <span>High Performance Computing (HPC)</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/High_Performance_Computing_Logo.png" alt="HPC Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://kubernetes.io/" target="_blank">
+                    <span>Kubernetes</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" alt="Kubernetes Logo">
+                </a>
+            </div>
+            <!-- Additional skills in HPC and Cloud Computing -->
+        </div>
+
+        <!-- Data Science and Analysis Section -->
+        <h2 class="title">Data Science and Analysis</h2>
+        <div class="skills-grid">
+            <div class="skill-box">
+                <a href="https://numpy.org/" target="_blank">
+                    <span>NumPy</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg" alt="NumPy Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://pandas.pydata.org/" target="_blank">
+                    <span>Pandas</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg" alt="Pandas Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://www.mathworks.com/products/matlab.html" target="_blank">
+                    <span>MATLAB</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="MATLAB Logo">
+                </a>
+            </div>
+            <!-- Additional Data Science skills -->
+        </div>
+
+        <!-- DevOps and Automation Section -->
+        <h2 class="title">DevOps and Automation</h2>
+        <div class="skills-grid">
+            <div class="skill-box">
+                <a href="https://www.docker.com/" target="_blank">
+                    <span>Docker</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" alt="Docker Logo">
+                </a>
+            </div>
+            <!-- Additional DevOps tools -->
+        </div>
+
+        <!-- Databases Section -->
+        <h2 class="title">Databases</h2>
+        <div class="skills-grid">
+            <div class="skill-box">
+                <a href="https://www.mysql.com/" target="_blank">
+                    <span>SQL</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" alt="SQL Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://www.mongodb.com/" target="_blank">
+                    <span>MongoDB</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/4/45/MongoDB-Logo.svg" alt="MongoDB Logo">
+                </a>
+            </div>
+        </div>
+
+        <!-- CAD and 3D Modeling Section -->
+        <h2 class="title">CAD and 3D Modeling</h2>
+        <div class="skills-grid">
+            <div class="skill-box">
+                <a href="https://www.autodesk.com/products/maya/overview" target="_blank">
+                    <span>Autodesk Maya</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Autodesk_Maya_Logo.svg" alt="Autodesk Maya Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://www.autodesk.com/products/autocad/overview" target="_blank">
+                    <span>AutoCAD</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/AutoCAD_Logo.svg" alt="AutoCAD Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://www.autodesk.com/products/revit/overview" target="_blank">
+                    <span>Revit</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/AutoCAD_Logo.svg" alt="Revit Logo"> <!-- Placeholder as Revit shares Autodesk branding -->
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://www.autodesk.com/products/fusion-360/overview" target="_blank">
+                    <span>Autodesk Fusion 360</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Autodesk_Fusion_360_Logo.png" alt="Fusion 360 Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://ultimaker.com/software/ultimaker-cura" target="_blank">
+                    <span>Ultimaker Cura</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Cura_Ultimaker_Logo.png" alt="Ultimaker Cura Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://www.blender.org/" target="_blank">
+                    <span>Blender</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg" alt="Blender Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://www.maxon.net/en/cinema-4d" target="_blank">
+                    <span>Cinema 4D</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/5/5a/Cinema_4D_Logo.svg" alt="Cinema 4D Logo">
+                </a>
+            </div>
+        </div>
+
+        <!-- Software Development Tools Section -->
+        <h2 class="title">Software Development Tools</h2>
+        <div class="skills-grid">
+            <div class="skill-box">
+                <a href="https://www.wireshark.org/" target="_blank">
+                    <span>Wireshark</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Wireshark_Logo.svg" alt="Wireshark Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://www.microsoft.com/en-us/microsoft-365/word" target="_blank">
+                    <span>Microsoft Word</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Microsoft_Office_Word_%282019%E2%80%93present%29.svg" alt="Word Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://www.microsoft.com/en-us/microsoft-365/excel" target="_blank">
+                    <span>Microsoft Excel</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg" alt="Excel Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://www.microsoft.com/en-us/microsoft-365" target="_blank">
+                    <span>Microsoft Office</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Microsoft_Office_logo_%282013%E2%80%932019%29.svg" alt="Office Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://visualstudio.microsoft.com/" target="_blank">
+                    <span>Visual C++</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Visual_Studio_2013_Logo.svg" alt="Visual C++ Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://unity.com/" target="_blank">
+                    <span>Unity</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Unity_Logo_%282019%29.svg" alt="Unity Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://regex101.com/" target="_blank">
+                    <span>Regular Expressions</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Regular_Expressions_Logo.png" alt="Regular Expressions Logo"> <!-- Placeholder -->
+                </a>
+            </div>
+        </div>
+
+        <!-- System Testing and Mobile Applications Section -->
+        <h2 class="title">System Testing and Mobile Applications</h2>
+        <div class="skills-grid">
+            <div class="skill-box">
+                <a href="https://en.wikipedia.org/wiki/System_testing" target="_blank">
+                    <span>System Testing</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/System_Testing_Logo.png" alt="System Testing Logo"> <!-- Placeholder -->
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://developer.android.com/guide" target="_blank">
+                    <span>Mobile Applications</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Android_logo_2019.svg" alt="Mobile Applications Logo">
+                </a>
+            </div>
+        </div>
+
+        <!-- Other Skills Section -->
+        <h2 class="title">Other Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-box">
+                <span>Drawing</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Drawing_Icon.svg" alt="Drawing Logo"> <!-- Placeholder -->
+            </div>
+            <div class="skill-box">
+                <span>Pixel Art</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Pixel_Art_Icon.png" alt="Pixel Art Logo"> <!-- Placeholder -->
+            </div>
+            <div class="skill-box">
+                <span>Violin</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Violin_Icon.png" alt="Violin Icon"> <!-- Placeholder -->
+            </div>
+            <div class="skill-box">
+                <span>Fencing (Sabre)</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Fencing_Icon.png" alt="Fencing Icon"> <!-- Placeholder -->
+            </div>
+            <div class="skill-box">
+                <span>Football</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Football_Icon.png" alt="Football Icon"> <!-- Placeholder -->
+            </div>
+            <div class="skill-box">
+                <span>Table Tennis</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Table_Tennis_Icon.png" alt="Table Tennis Icon"> <!-- Placeholder -->
+            </div>
+            <div class="skill-box">
+                <span>English as a Second Language (ESL)</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/ESL_Logo.png" alt="ESL Icon"> <!-- Placeholder -->
+            </div>
+            <div class="skill-box">
+                <span>Spanish (basic)</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_Spain.svg" alt="Spanish Flag">
+            </div>
+            <div class="skill-box">
+                <span>Japanese (basic)</span>
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg" alt="Japanese Flag">
+            </div>
+            <div class="skill-box">
+                <a href="https://www.adobe.com/products/photoshop.html" target="_blank">
+                    <span>Adobe Photoshop</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Photoshop Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://www.adobe.com/products/aftereffects.html" target="_blank">
+                    <span>After Effects</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg" alt="After Effects Logo">
+                </a>
+            </div>
+            <div class="skill-box">
+                <a href="https://www.apple.com/final-cut-pro/" target="_blank">
+                    <span>Final Cut Pro</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Final_Cut_Pro_Icon.png" alt="Final Cut Pro Logo">
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>CONNECT WITH ME</p>
+            <div class="social-links">
+                <span><a href="https://github.com/your-profile" target="_blank"><i class="fa fa-github"></i></a></span>
+                <span><a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fa fa-linkedin"></i></a></span>
+            </div>
+        </div>
+        
+    <script src="script.js"></script>
+
+</body>
+</html>

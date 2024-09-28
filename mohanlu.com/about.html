@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Link to separated CSS files -->
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/background.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/media-queries.css">
+</head>
+<body>
+    <!-- Particle Canvas Background -->
+    <div id="particle-canvas"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo" onclick="location.href='index.html'" style="cursor: pointer;">
+            MohanLu<span class="dot">.</span><span class="underscore">_</span>
+        </div>
+        <ul class="nav-items">
+            <li><a href="#About" onclick="location.href='about.html'" data-number="01">About</a></li>
+            <li><a href="#Experience" onclick="location.href='experience.html'" data-number="02">Experience</a></li>
+            <li><a href="#Projects" onclick="location.href='projects.html'" data-number="03">Projects</a></li>
+            <li><a href="#Skills" onclick="location.href='skills.html'" data-number="04">Skills</a></li>
+            <li><a href="#Contact" onclick="location.href='contact.html'" data-number="05">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Hey there<span>!</span></h1>
+        <p>
+            My name is <strong>Mohan Lu</strong>. I'm interested in helping engineer the future of software and web applications.
+        </p>
+
+        <h2 class="section-title">Technical Specs<span class="highlight">.</span></h2>
+        <p>
+            I've spent the last two years cutting my teeth in full-stack web development, going through highly recommended online courses and building an array of personal projects. I enjoy programming at both ends of the tech stack, whether it's creating data models, optimizing database queries, or animating SVGs and creating fluid digital experiences.
+        </p>
+
+        <h2 class="section-title">A Brief History<span class="highlight">...</span></h2>
+        <p>
+            I am an undergraduate student at NYU, with a focus on software engineering and full-stack web development. Through my coursework and personal projects, I've built a solid foundation in both front-end and back-end technologies. I am passionate about solving real-world problems and building innovative digital solutions.
+        </p>
+    </div>
+
+    <div class="footer">
+        <p>CONNECT WITH ME</p>
+        <div class="social-links">
+            <span><a href="https://github.com/your-profile" target="_blank"><i class="fa fa-github"></i></a></span>
+            <span><a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fa fa-linkedin"></i></a></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

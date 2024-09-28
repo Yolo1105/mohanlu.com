@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Link to separated CSS files -->
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/background.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/media-queries.css">
+</head>
+<body>
+    <!-- Particle Canvas Background -->
+    <div id="particle-canvas"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo" onclick="location.href='index.html'" style="cursor: pointer;">
+            MohanLu<span class="dot">.</span><span class="underscore">_</span>
+        </div>
+        <ul class="nav-items">
+            <li><a href="#About" onclick="location.href='about.html'" data-number="01">About</a></li>
+            <li><a href="#Experience" onclick="location.href='experience.html'" data-number="02">Experience</a></li>
+            <li><a href="#Projects" onclick="location.href='projects.html'" data-number="03">Projects</a></li>
+            <li><a href="#Skills" onclick="location.href='skills.html'" data-number="04">Skills</a></li>
+            <li><a href="#Contact" onclick="location.href='contact.html'" data-number="05">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Survey Section -->
+    <section class="survey-section">
+        <ul class="surveys grid">
+            <li class="survey-item">
+                <span class="survey-country list-only">UK</span>
+                <span class="survey-name">UK Beer May 2014</span>
+                <span class="survey-country grid-only">UK</span>
+                <div class="pull-right">
+                    <span class="survey-progress">
+                        <span class="survey-progress-bg">
+                            <span class="survey-progress-fg" style="width: 88%;"></span>
+                        </span>
+                        <span class="survey-progress-labels">
+                            <span class="survey-progress-label">88%</span>
+                            <span class="survey-completes">490 / 500</span>
+                        </span>
+                    </span>
+                    <span class="survey-end-date ended">2014 - May 10</span>
+                    <span class="survey-stage">
+                        <span class="stage draft">Draft</span>
+                        <span class="stage awarded">Awarded</span>
+                        <span class="stage live">Live</span>
+                        <span class="stage ended active">Ended</span>
+                    </span>
+                </div>
+            </li>
+            <li class="survey-item">
+                <span class="survey-country list-only">US</span>
+                <span class="survey-name">Pepsi Tracker New Orleans</span>
+                <span class="survey-country grid-only">US</span>
+                <div class="pull-right">
+                    <span class="survey-progress">
+                        <span class="survey-progress-bg">
+                            <span class="survey-progress-fg" style="width: 25%;"></span>
+                        </span>
+                        <span class="survey-progress-labels">
+                            <span class="survey-progress-label">25%</span>
+                            <span class="survey-completes">150 / 500</span>
+                        </span>
+                    </span>
+                    <span class="survey-end-date">2014 - July 12</span>
+                    <span class="survey-stage">
+                        <span class="stage draft">Draft</span>
+                        <span class="stage awarded">Awarded</span>
+                        <span class="stage live active">Live</span>
+                        <span class="stage ended">Ended</span>
+                    </span>
+                </div>
+            </li>
+            <li class="survey-item">
+                <span class="survey-country list-only">US</span>
+                <span class="survey-name">Global Music Brand Tracker</span>
+                <span class="survey-country grid-only">US</span>
+                <div class="pull-right">
+                    <span class="survey-end-date">2014 - Oct 1</span>
+                    <span class="survey-stage">
+                        <span class="stage draft">Draft</span>
+                        <span class="stage awarded active">Awarded</span>
+                        <span class="stage live">Live</span>
+                        <span class="stage ended">Ended</span>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>CONNECT WITH ME</p>
+        <div class="social-links">
+            <span><a href="https://github.com/your-profile" target="_blank"><i class="fa fa-github"></i></a></span>
+            <span><a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fa fa-linkedin"></i></a></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+/* Error: The target selector was not found.
+ * Use "@extend .timeline-split !optional" to avoid this error.
+ *     ,
+ * 124 |     @extend .timeline-split;
+ *     |     ^^^^^^^^^^^^^^^^^^^^^^^
+ *     '
+ *   experience.scss 124:5  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: The target selector was not found.\aUse "@extend .timeline-split !optional" to avoid this error.\a     \2577 \a 124 \2502      @extend .timeline-split;\d\a     \2502      ^^^^^^^^^^^^^^^^^^^^^^^\a     \2575 \a   experience.scss 124:5  root stylesheet';
+}

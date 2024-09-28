@@ -1,0 +1,86 @@
+/* input field styles */
+/* contact us styles */
+
+.fa-paper-plane {
+  color: #484848;
+}
+
+.contact-form {
+  padding: 0px 15px 0px 15px;
+  background-color: white; /* Set background to white */
+  color: black; /* Set text color to black */
+}
+
+.form-control {
+  border: 2px solid rgba(0, 0, 0, 0.27);
+  width: 100%;
+  max-width: 100%;
+  height: 3em;
+  font-size: 16px;
+  padding: 1em;
+  margin: 0.5em 0 2em 0;
+  font-weight: bold;
+  background-color: white; /* Make input fields white */
+  color: black; /* Set text color to black */
+}
+
+.section[data-anchor="contact"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust height as necessary */
+  background: none; /* Ensure no background color is set here unless intended */
+}
+
+.section[data-anchor="contact"] .content {
+  color: white; /* Ensuring text color is white */
+  background: transparent; /* No background for the content area */
+}
+
+.section[data-anchor="contact"] .contact-form {
+  background: none; /* No background for the form */
+  width: 100%; /* Adjust width as necessary */
+  max-width: 500px; /* Adjust based on design requirements */
+}
+
+
+textarea {
+  min-height: 10em;
+  background-color: white; /* Make textarea white */
+  color: black; /* Set text color to black */
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: black; /* Make labels visible */
+}
+
+#submit {
+  outline: none;
+  padding: 12px;
+  min-width: 200px;
+  border-radius: 2px;
+  border: 2px solid #ff6363;
+  text-align: center;
+  font-size: 1em;
+  color: white; /* Make text color white */
+  background-color: #ff6363; /* Make button background #ff6363 */
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#submit:hover {
+  background-color: white;
+  color: #ff6363;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}

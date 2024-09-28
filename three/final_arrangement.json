@@ -1,0 +1,29 @@
+[
+    {
+        "width": 38,
+        "height": 18,
+        "depth": 75,
+        "x": 40,
+        "y": 0,  
+        "z": 35, 
+        "rotation_y": 330 
+    },
+    {
+        "width": 19,
+        "height": 36,
+        "depth": 19,
+        "x": 40,
+        "y": 0,  
+        "z": 40,
+        "rotation_y": 35
+    },
+    {
+        "width": 16,
+        "height": 36,
+        "depth": 12,
+        "x": 40,
+        "y": 0,  
+        "z": 45, 
+        "rotation_y": 130
+    }
+]
