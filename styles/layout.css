@@ -1,0 +1,48 @@
+/* layout.css */
+.container {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    padding: 20px;
+    z-index: 10;
+    color: #ffffff;
+}
+
+.container h1, .container h2 {
+    color: #ffffff;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 48px;
+    color: #333;
+}
+
+h1 span {
+    color: #40a9ff;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 32px;
+    color: #333;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 40px;
+    color: #333;
+    margin-top: 50px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #40a9ff;
+}

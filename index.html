@@ -5,21 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Particle Canvas with Robot Background</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+        <!-- Link to Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Link to separated CSS files -->
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/background.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/media-queries.css">
+    <link rel="stylesheet" href="styles/loadingbar.css">
 </head>
+
 <body>
     <div class="overlay"></div>
+    
+    <!-- Navbar -->
     <nav class="navbar">
-        <div class="logo">MohanLu<span class="dot">.</span><span class="underscore">_</span></div>
+        <div class="logo" onclick="location.href='index.html'" style="cursor: pointer;">
+            MohanLu<span class="dot">.</span><span class="underscore">_</span>
+        </div>
         <ul class="nav-items">
-            <li><a href="about.html" data-number="01">About</a></li>
-            <li><a href="#Experience" data-number="02">Experience</a></li>
-            <li><a href="#Projects" data-number="03">Projects</a></li>
-            <li><a href="#Skills" data-number="04">Skills</a></li>
-            <li><a href="#Contact" data-number="05">Contact</a></li>
+            <li><a href="#About" onclick="location.href='about.html'" data-number="01">About</a></li>
+            <li><a href="#Experience" onclick="location.href='experience.html'" data-number="02">Experience</a></li>
+            <li><a href="#Projects" onclick="location.href='projects.html'" data-number="03">Projects</a></li>
+            <li><a href="#Skills" onclick="location.href='skills.html'" data-number="04">Skills</a></li>
+            <li><a href="#Contact" onclick="location.href='contact.html'" data-number="05">Contact</a></li>
         </ul>
-    </nav>
+    </nav>    
+
+    <!-- Particle Canvas Background -->
     <div id="particle-canvas"></div>
+    
+    <!-- Center Content -->
     <div class="center-content">
         <div class="small-text">
             Hello, I'm Mohan Lu. A passionate Software Engineer.
@@ -28,6 +47,15 @@
         <div class="button-container">
             <a href="https://drive.google.com/file/d/1Lc3SG2_5Xbjora2dj6PlAeuXT7gQrxE0/view?usp=sharing" class="btn btn-light" target="_blank">Download CV</a>
             <a href="https://www.linkedin.com/in/mohan-lu" class="btn btn-dark" target="_blank">Contact Me</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>CONNECT WITH ME</p>
+        <div class="social-links">
+            <span><a href="https://github.com/your-profile" target="_blank"><i class="fa fa-github"></i></a></span>
+            <span><a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fa fa-linkedin"></i></a></span>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@latest/dist/core.js"></script>

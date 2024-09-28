@@ -1,69 +1,91 @@
-<div class="formbold-main-wrapper">
-<!-- Author: FormBold Team -->
-<!-- Learn More: https://formbold.com -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Link to separated CSS files -->
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/background.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/media-queries.css">
+</head>
 <body>
+    <!-- Particle Canvas Background -->
+    <div id="particle-canvas"></div>
+
+    <!-- Navbar -->
     <nav class="navbar">
-        <div class="logo">MohanLu<span class="dot">.</span><span class="underscore">_</span></div>
+        <div class="logo" onclick="location.href='index.html'" style="cursor: pointer;">
+            MohanLu<span class="dot">.</span><span class="underscore">_</span>
+        </div>
         <ul class="nav-items">
-            <li><a href="about.html" data-number="01">About</a></li>
-            <li><a href="#Experience" data-number="02">Experience</a></li>
-            <li><a href="#Projects" data-number="03">Projects</a></li>
-            <li><a href="#Skills" data-number="04">Skills</a></li>
-            <li><a href="#Contact" data-number="05">Contact</a></li>
+            <li><a href="#About" onclick="location.href='about.html'" data-number="01">About</a></li>
+            <li><a href="#Experience" onclick="location.href='experience.html'" data-number="02">Experience</a></li>
+            <li><a href="#Projects" onclick="location.href='projects.html'" data-number="03">Projects</a></li>
+            <li><a href="#Skills" onclick="location.href='skills.html'" data-number="04">Skills</a></li>
+            <li><a href="#Contact" onclick="location.href='contact.html'" data-number="05">Contact</a></li>
         </ul>
     </nav>
+
+
+    <!-- begin section -->
+
+    <div class="section" data-anchor="contact" style="background-color: white;"> <!-- Add inline style -->
+        <div class="content wow fadeInDown" data-wow-delay="0.2s">
+            <h1 style="color: black;">CONTACT ME</h1> <!-- Change header color to black -->
+            <p style="color: black;">Whether you're interested in working with me or just want to say hello, I'd love to hear from you!</p> <!-- Change paragraph color to black -->
+            <br>
+            <div class="contact-form">
+                <div id="form-messages"></div>
+                <form id="ajax-contact" method="post" role="form" action="contact.php" data-toggle="validator">
+                    <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="0.6s">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="NAME" data-error="Field can't be blank!" required>
+                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                        <div class="help-block with-errors"></div>
+                    </div>
     
-    <div class="formbold-form-wrapper">
-        <form action="https://formbold.com/s/FORM_ID" method="POST">
-        <div class="formbold-mb-5">
-            <label for="name" class="formbold-form-label"> Full Name </label>
-            <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Full Name"
-            class="formbold-form-input"
-            />
+                    <div class="form-group has-feedback wow fadeInRight" data-wow-delay="0.8s">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL" data-error="Field can't be blank!" required>
+                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                        <div class="help-block with-errors"></div>
+                    </div>
+    
+                    <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="1s">
+                        <textarea data-minlength="10" class="form-control" id="message" name="message" placeholder="MESSAGE" data-error="Minimum of 10 characters" required></textarea>
+                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                        <div class="help-block with-errors"></div>
+                    </div>
+    
+                    <div class="hidden">
+                        <input type="text" class="form-control" id="human" name="human" placeholder="">
+                    </div>
+                    <div class="wow fadeInUp" data-wow-delay="1s">
+                        <button type="submit" id="submit" name="submit" class="btn btn-lg">SEND MESSAGE</button>
+                    </div>
+                </form>
+                <br>
+            </div>
         </div>
-
-        <div class="formbold-mb-5">
-            <label for="email" class="formbold-form-label"> Email Address </label>
-            <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your email"
-            class="formbold-form-input"
-            />
-        </div>
-
-        <div class="formbold-mb-5">
-            <label for="subject" class="formbold-form-label"> Subject </label>
-            <input
-            type="text"
-            name="subject"
-            id="subject"
-            placeholder="Enter your subject"
-            class="formbold-form-input"
-            />
-        </div>
-
-        <div class="formbold-mb-5">
-            <label for="message" class="formbold-form-label"> Message </label>
-            <textarea
-            rows="6"
-            name="message"
-            id="message"
-            placeholder="Type your message"
-            class="formbold-form-input"
-            ></textarea>
-        </div>
-
-        <div>
-            <button class="formbold-btn">Submit</button>
-        </div>
-        </form>
     </div>
+      <!-- end section -->
+    <!-- Footer -->
+    <div class="footer">
+        <p>CONNECT WITH ME</p>
+        <div class="social-links">
+            <span><a href="https://github.com/your-profile" target="_blank"><i class="fa fa-github"></i></a></span>
+            <span><a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fa fa-linkedin"></i></a></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-</div>
-<style>
+</html>

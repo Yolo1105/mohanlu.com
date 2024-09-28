@@ -1,10 +1,8 @@
 !function(a){var b="object"==typeof self&&self.self===self&&self||"object"==typeof global&&global.global===global;"function"==typeof define&&define.amd?define(["exports"],function(c){b.ParticleNetwork=a(b,c)}):"object"==typeof module&&module.exports?module.exports=a(b,{}):b.ParticleNetwork=a(b,{})}(function(a,b){var c=function(a){this.canvas=a.canvas,this.g=a.g,this.particleColor=a.options.particleColor,this.x=Math.random()*this.canvas.width,this.y=Math.random()*this.canvas.height,this.velocity={x:(Math.random()-.5)*a.options.velocity,y:(Math.random()-.5)*a.options.velocity}};return c.prototype.update=function(){(this.x>this.canvas.width+20||this.x<-20)&&(this.velocity.x=-this.velocity.x),(this.y>this.canvas.height+20||this.y<-20)&&(this.velocity.y=-this.velocity.y),this.x+=this.velocity.x,this.y+=this.velocity.y},c.prototype.h=function(){this.g.beginPath(),this.g.fillStyle=this.particleColor,this.g.globalAlpha=.7,this.g.arc(this.x,this.y,1.5,0,2*Math.PI),this.g.fill()},b=function(a,b){this.i=a,this.i.size={width:this.i.offsetWidth,height:this.i.offsetHeight},b=void 0!==b?b:{},this.options={particleColor:void 0!==b.particleColor?b.particleColor:"#fff",background:void 0!==b.background?b.background:"#1a252f",interactive:void 0!==b.interactive?b.interactive:!0,velocity:this.setVelocity(b.speed),density:this.j(b.density)},this.init()},b.prototype.init=function(){if(this.k=document.createElement("div"),this.i.appendChild(this.k),this.l(this.k,{position:"absolute",top:0,left:0,bottom:0,right:0,"z-index":1}),/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(this.options.background))this.l(this.k,{background:this.options.background});else{if(!/\.(gif|jpg|jpeg|tiff|png)$/i.test(this.options.background))return console.error("Please specify a valid background image or hexadecimal color"),!1;this.l(this.k,{background:'url("robot.png") repeat',"background-size":"auto"})}if(!/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(this.options.particleColor))return console.error("Please specify a valid particleColor hexadecimal color"),!1;this.canvas=document.createElement("canvas"),this.i.appendChild(this.canvas),this.g=this.canvas.getContext("2d"),this.canvas.width=this.i.size.width,this.canvas.height=this.i.size.height/2,this.l(this.i,{position:"relative"}),this.l(this.canvas,{"z-index":"20",position:"absolute",bottom: "0",width: "100%"}),window.addEventListener("resize",function(){return this.i.offsetWidth===this.i.size.width&&this.i.offsetHeight===this.i.size.height?!1:(this.canvas.width=this.i.size.width=this.i.offsetWidth,this.canvas.height=this.i.size.height/2,clearTimeout(this.m),void(this.m=setTimeout(function(){this.o=[];for(var a=0;a<this.canvas.width*this.canvas.height/this.options.density;a++)this.o.push(new c(this));this.options.interactive&&this.o.push(this.p),requestAnimationFrame(this.update.bind(this))}.bind(this),500)))}.bind(this)),this.o=[];
 
-// Calculate dimensions for each section
 var canvasWidth = this.canvas.width;
 var sectionWidth = canvasWidth / 5;
 
-// Heights for each section
 var fullHeight = this.canvas.height;
 var halfHeight = fullHeight / 2;
 var quarterHeight = fullHeight / 4;
@@ -13,23 +11,18 @@ var eighthHeight = fullHeight / 8;
 for (var a = 0; a < this.canvas.width * this.canvas.height / this.options.density; a++) {
     var particle = new c(this);
 
-    // First section (leftmost): full height, aligned to bottom
     if (particle.x < sectionWidth) {
         particle.y = fullHeight - Math.random() * fullHeight;
     }
-    // Second section: half of half height, aligned to bottom
     else if (particle.x >= sectionWidth && particle.x < sectionWidth * 2) {
         particle.y = fullHeight - Math.random() * halfHeight;
     }
-    // Third section (middle): 1/8 of half height, aligned to bottom
     else if (particle.x >= sectionWidth * 2 && particle.x < sectionWidth * 3) {
         particle.y = fullHeight - Math.random() * eighthHeight;
     }
-    // Fourth section: half of half height, aligned to bottom
     else if (particle.x >= sectionWidth * 3 && particle.x < sectionWidth * 4) {
         particle.y = fullHeight - Math.random() * halfHeight;
     }
-    // Fifth section (rightmost): full height, aligned to bottom
     else {
         particle.y = fullHeight - Math.random() * fullHeight;
     }
@@ -57,6 +50,6 @@ const typewriter = new Typewriter(typewriterElement, {
 });
 
 typewriter
-    .typeString('Full Stack')
-    .typeString('<span class="blue"> Developer </span>')  // 蓝色 "Developer"
+    .typeString('Web/Mobile/Cloud')
+    .typeString('<span class="blue"> Developer</span>') 
     .start();
