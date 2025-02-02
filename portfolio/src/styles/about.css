@@ -1,0 +1,39 @@
+.container {
+    max-width: 1000px;
+    margin-top: -1300px; /* Added margin-top to create space below the navbar */
+}
+
+h1 {
+    font-size: 4rem; /* Font size for the main heading */
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0 20px; /* Set specific top and bottom margins for better spacing */
+    position: relative;
+}
+
+h1 span {
+    font-size: 1.1em; /* Size of span relative to h1 */
+    color: #40a9ff; /* Green accent for "Hey there!" */
+}
+
+p {
+    font-size: 1rem; /* Font size for paragraphs */
+    line-height: 1.5; /* Line height for readability */
+    text-align: center;
+    margin-bottom: 30px; /* Bottom margin for paragraphs */
+    color: #BFBFBF; /* Paragraph color */
+}
+
+.section-title {
+    font-size: 2.5rem; /* Font size for section titles */
+    color: #fff;
+    font-weight: 600;
+    text-align: left;
+    margin: 15px 0; /* Set top and bottom margins for section titles */
+}
+
+.section-title .highlight {
+    font-size: 1em; /* Size for the highlight relative to section title */
+    color: #40a9ff; /* Accent color for dots */
+}

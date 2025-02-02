@@ -1,0 +1,105 @@
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    z-index: 1001;
+    background-color: #0f1423;
+    box-shadow: 0 3px #0c2d48; 
+}
+
+/* Slide-down and fade-in animation */
+@keyframes fadeInSlideDown {
+    0% {
+        opacity: 0; /* Fully transparent */
+        transform: translateY(-20px); /* Start from above */
+    }
+    100% {
+        opacity: 1; /* Fully opaque */
+        transform: translateY(0); /* End at original position */
+    }
+}
+
+/* Apply the slide-down and fade-in class */
+.fade-in-slide-down {
+    animation: fadeInSlideDown 3s ease-in-out forwards; /* Adjust duration and easing as needed */
+}
+
+.logo {
+    color: #40a9ff;
+    font-size: 34px;
+    font-weight: bold;
+    margin-left: 70px;
+    padding-right: 120px;
+    display: flex;
+    align-items: center;
+    cursor: pointer; /* Change cursor to pointer for the logo */
+}
+
+.logo .dot {
+    color: #40a9ff;
+}
+
+.nav-items {
+    display: flex;
+    gap: 50px;
+    flex: 1;
+    justify-content: flex-end;
+    padding-right: 540px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.nav-items li {
+    list-style: none;
+    position: relative;
+    text-align: center;
+}
+
+.nav-items li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    display: block; /* Make the link fill the li */
+    padding-right: 20px;
+    cursor: pointer; /* Ensure cursor is a pointer */
+    transition: color 0.3s ease, transform 0.5s ease; /* Longer transition for smooth scaling */
+    transform: scale(1); /* Initial scale */
+}
+
+/* Add before and after pseudo-elements for styling */
+.nav-items li a::before {
+    content: "// ";
+    color: #ffffff;
+    position: absolute;
+    left: -20px;
+}
+
+.nav-items li a::after {
+    content: attr(data-number);
+    color: #cccccc;
+    position: absolute;
+    left: 50%;
+    top: -15px;
+    transform: translateX(-50%);
+    font-size: 12px;
+}
+
+/* Progressive enlarging effect with bold and blue color on hover */
+.nav-items li a:hover {
+    color: #40a9ff; /* Change text color to blue on hover */
+    transform: scale(1.2); /* Larger scale on hover */
+}
+
+/* Change color of the pseudo-elements on hover */
+.nav-items li a:hover::before,
+.nav-items li a:hover::after {
+    color: #40a9ff; /* Change to blue */
+    font-weight: bold; /* Make bold on hover */
+}

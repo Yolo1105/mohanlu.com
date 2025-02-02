@@ -1,0 +1,20 @@
+#particle-canvas {
+    width: 100vw; /* Full viewport width */
+    height: 100%; /* Full height of the content */
+    background-image: url('robot.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the background image covers the entire canvas */
+    background-position: center center; /* Keeps the image centered */
+    position: fixed; /* Ensures the background stays fixed while scrolling */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Keeps the background behind other elements */
+    pointer-events: none; /* Allows interaction with content on top */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}

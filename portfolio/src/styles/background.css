@@ -1,0 +1,40 @@
+body {
+    /* Applying an enhanced radial gradient with new color stops transitioning */
+    background: radial-gradient(circle at center, 
+        #000066 0%, 
+        #185b92 20%, 
+        #6728dc 40%, 
+        rgba(22,22,22,0) 50%, 
+        #30325d 80%, 
+        #121320 100%);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    position: relative; /* Ensures correct stacking context */
+    overflow: hidden; /* Prevents any scrolling caused by absolute positioning */
+}
+
+@keyframes gradientBG {
+    0%, 100% {
+        background-position: 50% 50%; /* Starts and ends at the center */
+    }
+    50% {
+        background-position: 100% 100%; /* Extends outward to the edges */
+    }
+}
+
+#particle-canvas {
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background-image: url('../assets/images/robot.png'); /* Correct relative path */
+    background-repeat: repeat; /* Ensures the image does not repeat */
+    background-size: auto; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image in the viewport */
+    position: fixed; /* Stays in place during scrolling */
+    top: 0;
+    left: 0;
+    z-index: -3; /* Ensures it stays behind the gradient */
+    opacity: 0.8; /* Lower opacity to let the gradient show through */
+    pointer-events: none; /* Allows interaction with content on top */
+}

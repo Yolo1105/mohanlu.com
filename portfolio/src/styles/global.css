@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Reset and Box-Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and HTML Styles */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Avoid horizontal scroll */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Root element to handle full-page layout */
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full viewport height for flex layout */
+    justify-content: space-between; /* Space between header, content, and footer */
+    align-items: center;
+}
+
+/* Basic Typographic Styles */
+body {
+    font-size: 16px;
+    color: #ffffff; /* Global text color, adjust as needed */
+    background-color: #121212; /* Dark background color */
+    line-height: 1.6;
+    overflow-y: auto;
+}
+
+/* Links */
+a {
+    color: inherit; /* Use the current color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #40a9ff; /* Change color on hover */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 16px;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Fully transparent */
+    }
+    100% {
+        opacity: 1; /* Fully opaque */
+    }
+}
+
+.fade-in {
+    animation: fadeIn 3s ease-in-out; /* Adjust duration and easing as needed */
+}
