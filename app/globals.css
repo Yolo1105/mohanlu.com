@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset + base */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #141414;
+  color: #d6d6dd;
+  font-family: 'Geist', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Prevent the IDE chrome from being scrollable at the document level —
+   the Portfolio component manages its own scroll regions internally. */
+body {
+  overflow: hidden;
+}
+
+#__next {
+  width: 100vw;
+  height: 100vh;
+}
